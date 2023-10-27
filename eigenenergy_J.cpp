@@ -45,7 +45,7 @@ double ff_odd(double E){
 }
 
 int main(){
-    int num = 20, iter = 1000;
+    int num = 10, iter = 1000;
     double E_initial[num];
     cout << "Use the eigenenergy of infinite square well to guess" << endl;
     for (int n = 1; n <= num; n++){
