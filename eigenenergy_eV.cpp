@@ -45,7 +45,7 @@ double ff_odd(double E){
 }
 
 int main(){
-    int num = 10;
+    int num = 10, iter = 1000;
     double E_initial[num];
     cout << "Use the eigenenergy of infinite square well to guess" << endl;
     for (int n = 1; n <= num; n++){
@@ -55,7 +55,7 @@ int main(){
         if (n % 2 == 0){
             double E_in = E_initial[n-1] * eV / eV;
             double E_new = 0, E_old = E_in;
-            for (int i = 0; i < 1000; i++){
+            for (int i = 0; i < iter; i++){
                 E_new = E_old - f_even(E_old) / ff_even(E_old) * 0.1;
                 if (fabs((E_new - E_old)/E_old) < 1e-12){
                     cout << n << " state initial energy guess: " << E_in << " (eV)";
@@ -71,7 +71,7 @@ int main(){
         else{
             double E_in = E_initial[n-1] * eV / eV;
             double E_new = 0, E_old = E_in;
-            for (int i = 0; i < 1000; i++){
+            for (int i = 0; i < iter; i++){
                 E_new = E_old - f_odd(E_old) / ff_odd(E_old) * 0.1;
                 if (fabs((E_new - E_old)/E_old) < 1e-12){
                     cout << n << " state initial energy guess: " << E_in << " (eV)";
