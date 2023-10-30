@@ -1,4 +1,4 @@
-# Finite Square Well
+c# Finite Square Well
 In quantum mechanics, the energy eigenvalues of finite potential square well is given by transcendental equation. Therefore, it can be solved numerically, using a computer or graphically. In this file, one-variable Newton's method is used to find the roots of eigenenergys.
 
 ## System conditions
@@ -41,6 +41,6 @@ where $0 < r < 1$ to decrease the distance between $x_{n+1}$ and $x_{n}$ and fin
 ## Initial Guess
 The eigenenergys of an infinite square well with the same width is
 ```math
-E_n = \frac{n^2\pi^2 \hbar^2}{8ma^2}
+E_n = \frac{n^2\pi^2 \hbar^2}{8ma^2} - 13.6
 ```
 Use the value of each $n$ as the initial guess of the finite square well.
