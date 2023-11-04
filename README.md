@@ -1,4 +1,4 @@
-c# Finite Square Well
+C++ Finite Square Well
 In quantum mechanics, the energy eigenvalues of finite potential square well is given by transcendental equation. Therefore, it can be solved numerically, using a computer or graphically. In this file, one-variable Newton's method is used to find the roots of eigenenergys.
 
 ## System conditions
